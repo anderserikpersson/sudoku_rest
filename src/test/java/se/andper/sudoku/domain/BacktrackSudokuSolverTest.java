@@ -69,6 +69,6 @@ public class BacktrackSudokuSolverTest {
     @Test
     public void testNotSolvable() {
         boolean isSolved = solver.solve(new Board(notSolvableGrid));
-        assertThat(isSolved, is(true));
+        assertThat(isSolved, is(false));
     }
 }
